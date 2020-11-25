@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--loading animation setup-->
 
 <head>
       <meta charset="UTF-8">
@@ -7,11 +8,16 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <meta name="author" content="harrnish">
 
-      <title>Work | Photo</title>
+      
+      <title>WEB</title>
       <link rel="icon" href="/img/circle.png" />
+
       <!-- stylesheet -->
       <link rel="stylesheet" href="./css/style.css">
-
+      <!--把css跳脫字元-->
+      <!-- font awesome css-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
       <!-- bootstrap cdns -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -20,20 +26,29 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
             rel="stylesheet">
 
-      <!-- for on scroll animations -->
-      <link rel="stylesheet" href="./css/animate.css">
-      <script src="./js/wow.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- terminal effect -->
+      <script src="/js/t.min.js"></script>
 
+      <!-- for on scroll animations -->
+      <link rel="stylesheet" href="/css/animate.css">
+
+      <script src="/js/wow.min.js"></script>
+      <script src="/js/top.js"></script>
+      <!-- jquery link -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <!-- async 屬性優化網頁解析速度，讓引入的 JavaScript 檔在背景載入。-->
+      <script async='async' src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
 <body>
+      <!-- TODO: loader animation-->
+
       <div class="wrapper">
 
             <!--------------- navbar starts here --------------->
             <nav>
                   <span id="brand">
-                        <a href="index.html">work</a>
+                        <a href="index.html">ABZÛ</a>
                   </span>
 
                   <ul id="menu">
@@ -55,51 +70,53 @@
                   <ul id="menu">
                         <li><a href="index.html">home<span>.</span></a></li>
                         <li><a href="work.html">work<span>.</span></a></li>
-                        <li><a href="about.html">about me<span>.</span></a></li>
+                        <li><a href="about.html">about us<span>.</span></a></li>
                         <li><a href="contact.html">contact<span>.</span></a></li>
                   </ul>
             </div>
-
             <!--------------- navbar ends here --------------->
-
-            <div class="whitespace"></div>
+            <br><br><br>
+            <!-------------功能  ecver=1&controls=0&showinfo=0&rel=0&----------->
+            <div class="video">
+                  <iframe src="https://www.youtube.com/embed/2w6ZGywfllI?
+                        
+                        
+                        ecver=1&controls=0&showinfo=0&rel=0&autoplay=1&loop=0&mute=1&playlist=2w6ZGywfllI"
+                        frameborder="0" allowfullscreen></iframe>
+                  <!-- 注意 Youtube embed 連結是置放在 src=" 和 ? 之間。
+                         ? 之後的程式碼是控制像是自動播放，迴圈，和靜音設定：autoplay=1, loop=1, mute=1 -->
+            </div>
 
             <!--------------- hero section starts here --------------->
-            <div class="container">
-                  <div class="hero-content">
-                        <br><br>
-
-                        <div class="row">
-                              <div class="col-lg-8">
-
-                                    <h3 class="wow fadeInUp" data-wow-delay="1s">work.</h3><br>
-                                    <p class="wow fadeInUp" data-wow-delay="1.2s">Development lasted three years,
-                                          involving a team of thirteen people. Several members, including director Matt
-                                          Nava and composer Austin Wintory, had previously worked on the 2012 video game
-                                          Journey—the ocean setting of Abzû was both a reaction to the desert setting of
-                                          Journey and inspired by Nava's love of scuba diving. The setting and story
-                                          drew from Sumerian mythology and the cosmic ocean myth. Reaching high
-                                          positions in sales charts, Abzû was praised by journalists: the majority of
-                                          praise went to its art style, with some critics comparing it to Journey.</p>
-
-                              </div>
-                        </div>
+            <div class="hero">
+                  <div class="header">
+                        <h1 class="line anim-typewriter">"The new generation website you never see before."
+                        </h1>
                   </div>
             </div>
 
+            <div class="scroll-down"></div>
             <!--------------- hero section ends here --------------->
+
+
 
             <!--------------- projects section starts here --------------->
             <div class="container-fluid">
 
-                  <div class="whitespace"></div>
-                  <div class="whitespace"></div>
 
+                  <h6>Scroll to see </h6>
+
+                  <div class="vertical"></div>
+                  <br>
+
+                  <div class="whitespace"></div>
+                  <div class="whitespace"></div>
+                  <!--將此圖片分區塊，一分為二-->
                   <div class="row">
                         <div class="col-lg-8"></div>
 
-                        <div class="col-lg-4 project project1 wow fadeInUp" data-wow-delay="1.4s"
-                              onclick="location.href='project.html'"></div>
+                        <div class="col-lg-4 project project1 wow fadeInUp" onclick="location.href='project.html'">
+                        </div>
                   </div>
 
                   <div class="whitespace"></div>
@@ -135,8 +152,9 @@
 
                   <div class="whitespace"></div>
             </div>
-
             <!--------------- projects section ends here --------------->
+
+
 
             <!--------------- footer starts here --------------->
             <div class="footer">
@@ -146,7 +164,7 @@
                         <div class="collab">
                               <div class="row">
                                     <div class="col-lg-12">
-                                          <p class="wow fadeInUp">Got an interesting photo? I can help you.</p>
+                                          <p class="wow fadeInUp">Got an interesting photo? We can help you.</p>
                                     </div>
                               </div>
                         </div>
@@ -162,13 +180,13 @@
                         <div class="info">
                               <div class="row">
                                     <div class="col-lg-4" id="personal">
-                                          <p class="wow fadeInUp">connect with me</p>
+                                          <p class="wow fadeInUp ">connect with our team</p>
                                           <h4 class="wow fadeInUp" data-wow-delay="0.2s">twitter ... vincent</h4>
                                           <br><br>
                                     </div>
 
                                     <div class="col-lg-4" id="media">
-                                          <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
+                                          <p class="wow fadeInUp" data-wow-delay="0s">follow us</p>
 
                                           <ul>
                                                 <li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">fb</li>
@@ -181,7 +199,7 @@
                                     </div>
 
                                     <div class="col-lg-4" id="address">
-                                          <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
+                                          <p class="wow fadeInUp" data-wow-delay="0s">Copyright&copy2019</p>
                                           <h4 class="wow fadeInUp" data-wow-delay="0.2s">young.v470@gmail.com</h4>
                                           <br><br>
                                     </div>
@@ -189,28 +207,11 @@
                         </div>
                   </div>
             </div>
-
             <!--------------- footer ends here --------------->
 
-            <br><br><br><br>
+
 
       </div>
-
-      <style>
-            body {
-                  margin: 0;
-                  padding: 0;
-                  width: 100%;
-                  height: 220%;
-                  font-family: "Roboto Mono" !important;
-                  background-image: linear-gradient(50deg, #15273A 0%, #15273A 100%);
-                  color: #fff !important;
-                  background-size: 100%;
-            }
-      </style>
-
-
-
 
       <!-- greensock cdn -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
@@ -218,6 +219,7 @@
       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
       <script type="text/javascript">
             // navigation starts here
+
             $("#toggle").click(function () {
                   $(this).toggleClass('on');
                   $("#resize").toggleClass("active");
@@ -254,7 +256,17 @@
 
             new WOW().init();
       </script>
-      
+      <!--TODO: jquery js 動畫有問題-->
+      <!-- 回到頁面首頁速度過快，可再緩和一些 -->
+      <button>
+
+            <a href="#" class="fas fa-arrow-up wow flip "></a>
+      </button>
+
+
+
+
 </body>
+
 
 </html>
